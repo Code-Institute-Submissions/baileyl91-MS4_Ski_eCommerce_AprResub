@@ -32,7 +32,25 @@ body {
     width: fit-content;
 }
 
+#footer {
+    position: fixed;
+    height: 100px;
+    background-color: #1565C0;
+    color: white;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    text-align: center;
+}
 
+/* Social media links */
+.social {
+    color: white;
+    padding-right: 15px;
+    font-size: x-large;
+}
 
 .shop-now-button {
     background: black;
