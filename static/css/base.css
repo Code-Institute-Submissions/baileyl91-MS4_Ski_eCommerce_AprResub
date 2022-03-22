@@ -1,5 +1,9 @@
-body {
+html {
     height: 100%;
+}
+
+body {
+    height: calc(100vh - 164px);
     background-color: #64B5F6;
     font-family: 'Lato';
     display: flex;
@@ -36,6 +40,10 @@ main {
 
 .main-logo-link {
     width: fit-content;
+}
+
+.bg-black {
+    background: #000 !important;
 }
 
 #footer {
@@ -81,8 +89,8 @@ main {
     color: white;
 }
 
-text-black {
-    color: black !important;
+.carousel {
+    position: relative;
 }
 
 .carousel-item {
@@ -120,6 +128,8 @@ text-black {
 .card-text {
     padding-top: 10px;
 }
+
+
 
 
 /* -------------------------------- Media Queries */
