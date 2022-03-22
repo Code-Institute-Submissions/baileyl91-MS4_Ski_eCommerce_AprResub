@@ -3,8 +3,14 @@ body {
     background-color: #2196F3;
     font-family: 'Lato';
     display: flex;
-    margin-bottom:50px;
+    min-height: 100vh;
+    flex-direction: column;
 }
+
+/* Keep footer at bottom */
+main {
+    flex: 1 0 auto;
+  }
 
 #topnav {
     background-color: #1565C0;
@@ -33,7 +39,7 @@ body {
 }
 
 #footer {
-    position: fixed;
+    
     height: 100px;
     background-color: #1565C0;
     color: white;
@@ -44,6 +50,8 @@ body {
     padding-top: 10px;
     text-align: center;
 }
+
+
 
 /* Social media links */
 .social {
@@ -93,6 +101,15 @@ text-black {
 .fa-angle-right {
     color: black;
     font-size: 30px;
+}
+
+.card-deck {
+    position: relative;
+    height: 250px;
+}
+
+.card {
+    background-color: #BBDEFB;
 }
 
 
