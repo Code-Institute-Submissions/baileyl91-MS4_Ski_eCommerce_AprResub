@@ -18,7 +18,7 @@ def add_to_basket(request, item_id):
     redirect_url = request.POST.get('redirect_url')
     size = None
     if 'product_size' in request.POST:
-        size = request.POST['size']
+        size = request.POST['product_size']
     basket = request.session.get('basket', {})
 
     if size:
@@ -50,7 +50,7 @@ def adjust_basket(request, item_id):
     quantity = int(request.POST.get('quantity'))
     size = None
     if 'product_size' in request.POST:
-        size = request.POST['size']
+        size = request.POST['product_size']
     basket = request.session.get('basket', {})
 
     if size:
@@ -71,7 +71,7 @@ def adjust_basket(request, item_id):
             messages.success(request, f'Removed {product.name} from your basket')
 
     request.session['basket'] = basket
-    return redirect(reverse['view_basket'])
+    return redirect(reverse('view_basket'))
 
 
 def remove_from_basket(request, item_id):
@@ -80,7 +80,7 @@ def remove_from_basket(request, item_id):
         product = get_object_or_404(Product, pk=item_id)
         size = None
         if 'product_size' in request.POST:
-            size = request.POST['size']
+            size = request.POST['product_size']
         basket = request.session.get('basket', {})
 
         if size:
