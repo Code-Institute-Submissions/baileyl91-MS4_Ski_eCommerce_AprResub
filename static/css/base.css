@@ -55,6 +55,7 @@ main {
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
+    margin-top: 10px;
     padding-top: 10px;
     text-align: center;
 }
@@ -121,6 +122,23 @@ main {
     color: white;
 }
 
+.product-card {
+    color: white;
+}
+
+.card-body {
+    background-color: #1565C0;
+}
+
+.card-footer {
+    background-color: #1565C0;
+}
+
+.tag-color {
+    color: white;
+}
+
+
 .card i {
     font-size: xx-large;
 }
@@ -150,10 +168,29 @@ a.category-badge > span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    z-index: 1000;
+    background-color: white;
 }
 
 .btt-link {
     cursor: pointer;
+}
+
+.product-logo {
+    padding-top: 20px;
+}
+
+.category-badge {
+    padding-right: 5px;
+    color:#000;
+}
+
+.product-home-link {
+    color:#000;
+}
+
+.sort-select-wrapper {
+    padding-top: 10px;
 }
 
 /* -------------------------------- Media Queries */
