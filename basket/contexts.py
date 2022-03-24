@@ -24,7 +24,7 @@ def basket_contents(request):
         'delivery': delivery,
         'free_delivery_delta': free_delivery_delta,
         'free_shipping_threshold': settings.FREE_SHIPPING_THRESHOLD,
-        'grand_total': grand_total,
+        'grand_total': grand_total, 
     }
 
     return context
