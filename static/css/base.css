@@ -4,7 +4,7 @@ html {
 
 body {
     height: calc(100vh - 164px);
-    background-color: #64B5F6;
+    background-color: #E3F2FD;
     font-family: 'Lato';
     display: flex;
     min-height: 100vh;
@@ -26,7 +26,9 @@ main {
     color: white;
 }
 
-
+.product-name {
+    text-align: center;
+}
 
 #footer {
     
@@ -150,7 +152,7 @@ main {
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
+    background: #E3F2FD;
     z-index: -1;
 }
 
