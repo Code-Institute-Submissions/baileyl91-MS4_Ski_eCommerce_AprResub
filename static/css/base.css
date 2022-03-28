@@ -33,7 +33,6 @@ main {
 
 
 #footer {
-    
     height: 100px;
     background-color: #1565C0;
     color: white;
@@ -43,7 +42,17 @@ main {
     margin-bottom: 0px;
     padding-top: 10px;
     text-align: center;
-    margin-top: auto;
+    margin-top: 20px;
+}
+
+.fa-snowflake {
+    color: white;
+    font-size: xx-large;
+    padding-left: 10px;
+}
+
+.nav-link:hover {
+    color:#000;
 }
 
 
@@ -54,8 +63,24 @@ main {
     font-size: x-large;
 }
 
+.fa-twitter:hover {
+    color: #BBDEFB;
+    text-decoration: none;
+}
+
+.fa-instagram:hover {
+    color: #BBDEFB;
+    text-decoration: none;
+}
+
+.fa-pinterest:hover {
+    color: #BBDEFB;
+    text-decoration: none;
+}
+
 .fa-facebook:hover {
-    color: black;
+    color: #BBDEFB;
+    text-decoration: none;
 }
 
 .shop-now-button {
