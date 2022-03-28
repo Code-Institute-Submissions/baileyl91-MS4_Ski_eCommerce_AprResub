@@ -80,15 +80,21 @@
                                                             </span>
                                                         </button>
                                                     </div>
+                                                    
                                                     {% if item.product.has_sizes %}
                                                         <input type="hidden" name="product_size" value="{{ item.size }}">
                                                     {% endif %}
+                                                    
+                                                   
                                                     {% if item.product.has_boots_sizes %}
                                                         <input type="hidden" name="product_size" value="{{ item.size }}">
                                                     {% endif %}
+                                                    
+                                                    
                                                     {% if item.product.has_ski_sizes %}
                                                         <input type="hidden" name="product_size" value="{{ item.size }}">
                                                     {% endif %}
+                                                    
                                                 </div>
                                             </div>
                                         </form>
