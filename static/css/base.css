@@ -9,6 +9,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Keep footer at bottom */
@@ -30,6 +31,7 @@ main {
     text-align: center;
 }
 
+
 #footer {
     
     height: 100px;
@@ -39,9 +41,9 @@ main {
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
-    margin-top: 10px;
     padding-top: 10px;
     text-align: center;
+    margin-top: auto;
 }
 
 
