@@ -18,18 +18,6 @@ main {
 
 #topnav {
     background-color: #1565C0;
-}
-
-/* from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-.fa-snowflake {
     color: white;
 }
 
@@ -38,13 +26,7 @@ main {
     color: white;
 }
 
-.main-logo-link {
-    width: fit-content;
-}
 
-.bg-black {
-    background: #000 !important;
-}
 
 #footer {
     
@@ -61,7 +43,6 @@ main {
 }
 
 
-
 /* Social media links */
 .social {
     color: white;
@@ -69,8 +50,11 @@ main {
     font-size: x-large;
 }
 
+.fa-facebook:hover {
+    color: black;
+}
+
 .shop-now-button {
-    background: black;
     color: white;
     min-width: 260px;
 }
