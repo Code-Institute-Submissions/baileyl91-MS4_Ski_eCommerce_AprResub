@@ -50,6 +50,8 @@
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 small">Size: {% if item.product.has_boots_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 small">Size: {% if item.product.has_ski_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
@@ -135,6 +137,7 @@
             </div>
         </div>
     </div>
+    
     <div id="loading-overlay">
         <h1 class="text-light logo-font loading-spinner">
             <span class="icon">

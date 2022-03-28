@@ -60,6 +60,12 @@
                                                 <li class="small">
                                                     {% if item.product.has_sizes %}
                                                         Size {{ item.product.size|upper }}
+                                                    {% endif %}
+                                                    {% if item.product.has_boots_sizes %}
+                                                        Size {{ item.product.size|upper }}
+                                                    {% endif %}
+                                                    {% if item.product.has_ski_sizes %}
+                                                        Size {{ item.product.size|upper }}
                                                     {% endif %}{{ item.product.name }} x{{ item.quantity }}
                                                 </li>
                                             {% endfor %}
