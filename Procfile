@@ -1,1 +1,1 @@
-web: gunicorn django_project.wsgi:application
+web: gunicorn ski_ecommerce.wsgi:application
