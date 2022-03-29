@@ -1,1 +1,3 @@
-web: gunicorn ski_ecommerce.wsgi:application
+web: gunicorn django_project.wsgi:application 
+python manage.py collectstatic 
+manage.py migrate
