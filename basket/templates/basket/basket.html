@@ -72,7 +72,7 @@
                                                             <span>
                                                                 <i class="fa fa-minus fa-sm"></i>
                                                             </span>
-                                                        </button>
+                                                         </button>
                                                     </div>
                                                     <input class="form-control form-control-sm qty_input" type="number"
                                                         name="quantity" value="{{ item.quantity }}" min="1" max="99"
@@ -90,17 +90,12 @@
                                                     {% if item.product.has_sizes %}
                                                         <input type="hidden" name="product_size" value="{{ item.size }}">
                                                     {% endif %}
-                                                    
-                                                   
                                                     {% if item.product.has_boots_sizes %}
                                                         <input type="hidden" name="product_size" value="{{ item.size }}">
                                                     {% endif %}
-                                                    
-                                                    
                                                     {% if item.product.has_ski_sizes %}
                                                         <input type="hidden" name="product_size" value="{{ item.size }}">
                                                     {% endif %}
-                                                    
                                                 </div>
                                             </div>
                                         </form>
