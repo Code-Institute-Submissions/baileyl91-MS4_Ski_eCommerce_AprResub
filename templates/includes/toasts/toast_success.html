@@ -28,9 +28,15 @@
                         </div>
                         <div class="col-9">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                            <p class="my-0 small">Size: {% if item.product.has_boots_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                            <p class="my-0 small">Size: {% if item.product.has_ski_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                            {% if item.product.has_sizes %}
+                                            <p class="my-0"><strong>Size: </strong>{{ item.size|upper }}</p>
+                                        {% endif %}
+                                        {% if item.product.has_boots_sizes %}
+                                            <p class="my-0"><strong>Size: </strong>{{ item.size|upper }}</p>
+                                        {% endif %}
+                                        {% if item.product.has_ski_sizes %}
+                                            <p class="my-0"><strong>Size: </strong>{{ item.size|upper }}</p>
+                                        {% endif %}
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                     </div>
