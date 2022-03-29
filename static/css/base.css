@@ -121,7 +121,7 @@ main {
 }
 
 .carousel-item {
-    height: 750px;
+    height: 100%;
 }
 
 .carousel-caption {
@@ -140,12 +140,12 @@ main {
 
 .card-deck {
     position: relative;
-    height: 250px;
 }
 
 .card {
     background-color: #1565C0;
     color: white;
+    height: 250px;
 }
 
 .product-card {
