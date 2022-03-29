@@ -83,6 +83,13 @@ main {
     text-decoration: none;
 }
 
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+   }
+
 .shop-now-button {
     color: white;
     min-width: 260px;
