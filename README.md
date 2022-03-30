@@ -136,3 +136,105 @@ There are a number of features that have been implemented into the website which
 * [AWS](https://aws.amazon.com)
     * Cloud application to hold media files
 
+ ## Issues
+
+ ## Testing
+
+[Click here to see the testing documentation](TESTING.md)
+
+## Deployment
+
+**Deployment to Heroku**
+
+1. Set Up A New Heroku App
+    * Navigate to Heroku.com, create a new account, or log in if you already have an account.
+    * On the dashboard page, click the "Create New App" button.
+    * Give the app a name, the name must be unique with hyphens between words.
+    * Set the region closest to you, and click "Create App".
+2. Create A Requirements.txt file
+    A requirements.txt file contains a list of the Python dependencies that our project needs to run successfully. It's how Heroku can detect what language we're using. Here are the steps to create a requirements.txt file:
+    
+    Create a requirements.txt file by typing in the terminal:
+    ```
+    pipi3 freeze --local > requirements.txt
+    ```
+
+    Add, commit, and push the file:
+    ```
+    git add -A
+    git commit -m "Add requirements.txt" 
+    git push
+    ```
+3. Create A Procfile file
+    A procfile is a special kind of file that tells Heroku how to run our project.
+    In the terminal, type:
+    ```
+    echo web: python run.py > Procfile
+    ```
+
+    This command tells Heroku that it's going to be a web process, and the command to run our application is "python run.py", which is the name of the python file that we've created.
+
+    Add, commit, and push the file:
+    ```
+    git add -A
+    git commit -m "Add Procfile" 
+    git push
+    ```
+4. Connect Our App to Github
+    * In the Heroku app dashboard, navigate to the Deploy page. On the Deployment Method, click "Github".
+    * Click on the "Connect to Github" button.
+    * Fill in the name of your Github repository name and click on "Search".
+    * After it found the correct repository, click on "Connect".
+
+5. Set Up The Environment Variables in Heroku
+    Since we've contained our environment variables within a hidden file env.py, Heroku won't be able to read those variables. We can securely tell Heroku which variables are required.
+    * Go back to the Heroku dashboard of your django app, navigate to the "Settings" page.
+    * Click on the "Reveal Config Vars" button, add environment variables.
+
+6. Enable The Automatic Deployment
+    * On the "Automatic Deploys" section, from our master/main branch click on "Enable Automatic Deployment".
+    * On the "Manual deploy" section, from our master/main click on "Deploy Branch".
+    * Heroku will now receive the code from Github and start building the app using our required packages. Once it's done, you'll see a notification "Your app was successfully deployed." The deployed version can now be viewed by selecting View App.
+
+**Forking the GitHub Repository**
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps.
+1. Log in to GitHub and locate the GitHub Repository
+2. At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+**Making a Local Clone**
+
+1. Log in to GitHub and locate the GitHub Repository
+2. Below the settings, click on "Code".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone, and then paste the URL you copied in Step 3.
+7. Press Enter. Your local clone will be created.
+
+## Credits
+
+**Code**
+
+To create the ski shop, I have relied heavily on the Boutique Ado
+project.
+
+**Content**
+
+The content on the homepage was written by me.
+The content for the products was taken from Snow & Rock website
+ 
+
+**Media**
+
+The hero images for the carousel was found on Unsplash, was created by [Maarten Duineveld](https://unsplash.com/photos/pmfJcN7RGiw), [Jeremey Bezanger](https://unsplash.com/photos/jW1I1M9TdRA) and [Ethan Walsweer](https://unsplash.com/photos/weFx9RflIfU).
+
+The images provided for the products was taken from the [Snow & Rock website](https://www.snowandrock.com/).
+A backup image for the products if there no image found was from Boutique Ado project.
+
+
+**Acknowledgments**
+
+Want to thank the Student Care and fellows students for their support. Also the tremendous community on the Slack channel.
+Also wanted to say a massive thanks to Christine from tutor support for actually spending the whole morning debugging the issue with Heroku and AWS.
