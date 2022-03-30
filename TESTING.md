@@ -85,5 +85,44 @@ to understand more better about images to improve loading times.
 
 **Product Management Page**
 
+| Feature  | Expected  |  Testing | Result  | Pass/Fail  |
+|---|---|---|---|---|
+| SuperUser  | Click on inuput field  | able to type inside search box  | write in search box  |  Pass |
+|   | Click on cancel button  | Click on cancel button  | redirect to products page  | Pass |
+|   | Click on add button  | Click on add button  | add new product and redirect to products page  |  Pass |
 
+**Contact Page**
+
+| Feature  | Expected  |  Testing | Result  | Pass/Fail  |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+
+**Profile Page**
+
+| Feature  | Expected  |  Testing | Result  | Pass/Fail  |
+|---|---|---|---|---|
+| To be able to update delivery information  | information to update upon clicking update information button  | update information  | information is updated  | Pass |
+| Click update information button  | click the button, expecting information to update | click update information button  |  information get updated | Pass  |
+| Click order history order number  | click order history order number, redirects to order confirmation page  | click order history order number  | redirects to order confirmation page  | Pass  |
+
+**Login Page**
+
+| Feature  | Expected  |  Testing | Result  | Pass/Fail  |
+|---|---|---|---|---|
+| Log in functionality  | Correct user/pass combination directs user to the home page   | Log in with correct username/password combination  | Redirected to home page   | Pass  |
+|   | Incorrect username/password combination shows error message  | Attempt to log in with incorrect credentials  | "The username and/or password you specified are not correct." error message appears  | Pass |
+|  Link to Register | Redirect to Sign Up page  | Click link to sign up page  | Redirected to sign up page  | Pass  |
+
+**Register Page**
+
+| Feature  | Expected  |  Testing | Result  | Pass/Fail  |
+|---|---|---|---|---|
+| Register functionality  | Form validation for email requires @ symbol  | Attempt to register without @ in input field  |  Form validation requests valid email address | Pass  |
+|   |  E-mail Again value must be same as Email value | Attempt to register with incorrect email in email  |  Form validation requests email address must match | Pass  |
+|   | Username must be between 4 and 15 characters  | Attempt to enter username with less than 4 characters  |Feedback error displayed | Pass  |
+|   | Username must be between 4 and 15 characters  | Attempt to enter username with more than 15 characters  | Form restricts the user from using more than 15 characters  |  Pass |
+|   | Password must be longer than 8 characters  |  Attempt to enter password with less than 8 characters | Form restricts the user from using less than 8 characters  | Pass  |
+|   | Register with new user and password to be logged in and redirected to home page  | Enter email address, name, username, password and click register  | New account registered and home page shown  | Pass  |
 
