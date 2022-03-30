@@ -93,3 +93,46 @@ There are a number of features that have been implemented into the website which
 * Reviews for the products
 * Review rating for the products
 * Pagination for the products page
+
+## Technology Used
+
+**Language Used**
+
+* HTML5
+* CSS3
+* JavaScript
+* Python
+
+**Frameworks, Libraries, and Programs Used**
+
+* [Google Font](https://fonts.google.com/)
+    * The font 'Lato' was imported from Google Font.
+* [Font Awesome](https://fontawesome.com/)
+    * Used to get some icons for the site.
+* [Gitpod](https://www.gitpod.io/)
+    * Gitpod is the development environment used to develop the project.
+* [GitHub](https://github.com/)
+    * GitHub is used to store the code for the site.
+* [Git](https://git-scm.com/)
+    * Git was used as version control, to add, commit and push Git and GitHub.
+* [Balsamiq](https://balsamiq.com/)
+    * Used to create wireframes for the website.
+* [Google Developer Chrome Tools](https://developers.google.com/web/tools/chrome-devtools)
+    * Used to inspect elements of the page and debug any potential problems within the website.
+* [Unsplash](https://unsplash.com/)
+    * Used to get stock-free images for the project.
+* [Bootstrap](https://getbootstrap.com/)
+    * Used to create a responsive site.
+* [jQuery](https://jquery.com/)
+    * Used to work with Materialize framework
+* [Jinja](https://jinja.palletsprojects.com/)
+    * Used as a templating language for Python to display backend data to HTML.
+* [Coolors](https://coolors.co/)
+    * Used to create a cohesive color scheme for the website.
+* [Heroku](https://www.heroku.com/)
+    * Used to deploy the website.
+* [Django](https://www.djangoproject.com/)
+    * Application framework.
+* [AWS](https://aws.amazon.com)
+    * Cloud application to hold media files
+
