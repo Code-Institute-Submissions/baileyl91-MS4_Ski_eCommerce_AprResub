@@ -46,7 +46,7 @@ Admin User
 
 The colour scheme selected for the website is to reflect bluebird days when skiing. The nav bar and the footer would be a dark shade of blue with white text to represent the snow.The body is a very light shade of blue.
 
-![Colour Pallete]()
+![Colour Pallete](static/docs/images/pallete.pdf)
 
 **Typograpghy**
 
@@ -58,10 +58,16 @@ The images for the hero carousel on the home page was sourced from Unsplash. The
 
 **Database Structure**
 
+Database schema which can be viewed [here](static/docs/database/Database%20ER%20diagram%20(crow's%20foot).png)
+
 **Wireframes**
 
-* [Desktop Wireframe]()
-* [Mobile Wireframe]()
+Both desktop and mobile view
+
+* [Home](static/docs/wireframes/Home%20Page%20Desktop.png)
+* [Products](static/docs/wireframes/Products.png)
+* [Product Detail](static/docs/wireframes/Products%20Details.png)
+* [Checkout](static/docs/wireframes/Checkout%20Form.png)
 
 ## Features
 
