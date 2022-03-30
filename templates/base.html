@@ -50,6 +50,7 @@
               <i class=" fa fa-snowflake"></i>
             </a>
           </div>
+
           <div class="col-12 col-lg-4 col-md-3 my-auto py-1 py-lg-0 ">
             <form method="GET" action="{% url 'products' %}">
               <div class="input-group w-100">
@@ -62,6 +63,7 @@
               </div>
             </form>
           </div>
+
           <div class="col-12 col-lg-4 col-md-5 my-auto py-1 py-lg-0 ">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
               <li class="list-inline-item">
@@ -72,26 +74,29 @@
                   </div>
                 </a>
               </li>
+
               <li class="list-inline-item dropdown">
                 <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div class="text-center">
-                      <div><i class="fas fa-user fa-lg"></i></div>
-                      <p class="my-0">My Account</p>
+                    <div><i class="fas fa-user fa-lg"></i></div>
+                    <p class="my-0">My Account</p>
                   </div>
-              </a>
-              <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                  {% if request.user.is_authenticated %}
-                      {% if request.user.is_superuser %}
-                        <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                      {% endif %}
-                      <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                      <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                  {% else %}
-                      <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                      <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                  {% endif %}
-              </div>
+                </a>
+
+                <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                    {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                          <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                        {% endif %}
+                          <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                          <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                    {% else %}
+                          <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                          <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                    {% endif %}
+                </div>
               </li>
+
               <li class="list-inline-item">
                 <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_basket' %}">
                   <div class="text-center">
@@ -104,11 +109,13 @@
                           {% endif %}
                       </p>
                   </div>
-              </a>
+                </a>
               </li>
+              
             </ul>
           </div>
         </div>
+
         <div id="topnav" class="row">
           <nav class="navbar-custom navbar navbar-expand-lg w-100">
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,9 +123,9 @@
                 <i class="fas fa-bars fa-1x text-white"></i>
             </button>
             <div class="collapse navbar-collapse" id="main-nav">
-            {% include 'includes/mobile_top_header.html' %}
-            {% include 'includes/main_nav.html' %}
-          </div>
+              {% include 'includes/mobile_top_header.html' %}
+              {% include 'includes/main_nav.html' %}
+            </div>
         </nav>
         </div>
 
@@ -154,16 +161,18 @@
             <p>Phone Number: 01443 123456</p>
             <p>Email: info@skishop.co.uk</p>
           </div>
+
           <div class="col-sm-12 col-md-12 col-lg-4">
             <p>This site was made for educational purposes.</p>
             <p>© 2021 Copyright by Luke Bailey</p>
           </div>
+          
           <div class="col-sm-12 col-md-12 col-lg-4">
             <p>Social Media: </p>
             <a target="_blank" rel="noopener" alt="facebook" href="https://www.facebook.com" class="social fab fa-facebook"></a>
-                        <a target="_blank" rel="noopener" alt="twitter" href="https://www.twitter.com" class="social fab fa-twitter"></a>
-                        <a target="_blank" rel="noopener" alt="instagram" href="https://www.instagram.com" class="social fab fa-instagram"></a>
-                        <a target="_blank" rel="noopener" alt="pinterest" href="https://www.pinterest.com" class="social fab fa-pinterest"></a>
+            <a target="_blank" rel="noopener" alt="twitter" href="https://www.twitter.com" class="social fab fa-twitter"></a>
+            <a target="_blank" rel="noopener" alt="instagram" href="https://www.instagram.com" class="social fab fa-instagram"></a>
+            <a target="_blank" rel="noopener" alt="pinterest" href="https://www.pinterest.com" class="social fab fa-pinterest"></a>
           </div>
         </div>
       </footer>
