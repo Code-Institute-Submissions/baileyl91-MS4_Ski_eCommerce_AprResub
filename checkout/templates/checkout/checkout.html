@@ -16,6 +16,7 @@
 
 {% block content %}
     <div class="overlay"></div>
+
     <div class="container">
         <div class="row">
             <div class="col">
@@ -50,14 +51,14 @@
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                             {% if item.product.has_sizes %}
-                                            <p class="my-0"><strong>Size: </strong>{{ item.size|upper }}</p>
-                                        {% endif %}
-                                        {% if item.product.has_boots_sizes %}
-                                            <p class="my-0"><strong>Size: </strong>{{ item.size|upper }}</p>
-                                        {% endif %}
-                                        {% if item.product.has_ski_sizes %}
-                                            <p class="my-0"><strong>Size: </strong>{{ item.size|upper }}</p>
-                                        {% endif %}
+                                <p class="my-0"><strong>Size: </strong>{{ item.size|upper }}</p>
+                            {% endif %}
+                            {% if item.product.has_boots_sizes %}
+                                <p class="my-0"><strong>Size: </strong>{{ item.size|upper }}</p>
+                            {% endif %}
+                            {% if item.product.has_ski_sizes %}
+                                <p class="my-0"><strong>Size: </strong>{{ item.size|upper }}</p>
+                            {% endif %}
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
@@ -109,6 +110,7 @@
 							{% endif %}
 						</div>
                     </fieldset>
+                    
                     <fieldset class="px-3">
                         <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                         <!-- A Stripe card element will go here -->
