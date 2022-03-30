@@ -5,7 +5,7 @@ html {
 body {
     height: calc(100vh - 164px);
     background-color: #E3F2FD;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -16,6 +16,11 @@ body {
 main {
     flex: 1 0 auto;
   }
+
+#mainav {
+    background-color: #1565C0;
+    color: white;
+}
 
 #topnav {
     background-color: #1565C0;
