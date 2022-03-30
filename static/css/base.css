@@ -1,3 +1,8 @@
+.topnav {
+    background-color: #1565C0;
+    color: white;
+}
+
 html {
     height: 100vh;
 }
@@ -16,11 +21,6 @@ body {
 main {
     flex: 1 0 auto;
   }
-
-#topnav {
-    background-color: #1565C0;
-    color: white;
-}
 
 .logo-font {
     text-transform: uppercase;
