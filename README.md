@@ -7,6 +7,11 @@ This project was created as part of my Milestone Project 4 with Code Institute W
 For the project and to demonstrate what I have learned in the course, we needed to create an e-commerce store and have decided to create a ski shop.
 The main goal of the website is to be an online shop for skiers to buy ski equipment.
 
+**Development**
+
+For this project, due other things in life, had only 15 days to complete and submit this project.
+Due to the time constrait, I had to heavily rely on the Boutique Ado project and to customized it to fit my goals for the project.
+
 ## User Stories
 
 Client Goals
@@ -144,6 +149,17 @@ There are a number of features that have been implemented into the website which
 
  ## Issues
 
+An issue that I had with the navbar in mobile view, was I couldn't get the menu to display inline, like the products nav bar. I tried to fixed the issue by following the bootstrap documentation but unfortunately it did not solve the problem.
+Had to leave it as it due to time constraits. 
+
+There is an issue with back to the top of page button on product page, when scrolled down to bottom,
+the button was behind the footer but the outline detail was in front of the footer.
+I changed the z-position of the button to be at the front completely so we can see the button at all time.
+The issue is to have the button stop scrolling down and sit at top of the footer.
+
+Another issue, is images uploading to Heroku and AWS. The images was not uploading and working with tutor support Christine who spent the whole morning, roughly 4 hours with me to figure out why. We discovered that when uploading images through Django admin, the image file names was being rewritten but not updating the files name to AWS.
+Had to manually rename the images file name through AWS. 
+
  ## Testing
 
 [Click here to see the testing documentation](TESTING.md)
@@ -225,6 +241,10 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 To create the ski shop, I have relied heavily on the Boutique Ado
 project.
+
+To create the hero carousel and the card deck on the home page, was adapted from the Bootstrap tutorial.
+[Hero Carousel](https://getbootstrap.com/docs/4.0/components/carousel/)
+[Card Deck](https://getbootstrap.com/docs/4.0/components/card/)
 
 **Content**
 
