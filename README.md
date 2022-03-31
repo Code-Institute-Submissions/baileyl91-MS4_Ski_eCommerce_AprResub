@@ -1,6 +1,6 @@
 # Ski Shop
 
-[View the live project here.](https:https://ski-ecommerce.herokuapp.com/)
+[View the live project here.](https://ski-ecommerce.herokuapp.com/)
 
 This project was created as part of my Milestone Project 4 with Code Institute Web Application Development course.
 
