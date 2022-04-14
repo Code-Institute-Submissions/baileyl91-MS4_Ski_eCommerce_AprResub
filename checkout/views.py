@@ -75,6 +75,7 @@ def checkout(request):
                                 product_size=size,
                             )
                             order_line_item.save()
+
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
