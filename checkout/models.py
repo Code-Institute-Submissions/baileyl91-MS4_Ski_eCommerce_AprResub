@@ -66,7 +66,6 @@ class Order(models.Model):
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
-    
     has_sizes = models.BooleanField(null=True, blank=True, default=False)
     has_ski_sizes = models.BooleanField(null=True, blank=True, default=False)
     has_boots_sizes = models.BooleanField(null=True, blank=True, default=False)
