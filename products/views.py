@@ -3,8 +3,9 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from datetime import datetime
 
-from .models import Product, Category
+from .models import Product, Category, ProductReview
 from .forms import ProductForm
 
 # Create your views here.
@@ -137,3 +138,21 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+# Reviews views
+@login_required
+def add_review(request, product_id):
+    """ Add a review of a product """
+    product = get_object_or_404(Product, pk=product_id)
+    product.num_visits = product.num_visits + 1
+    product.last_visit = datetime.now()
+    product.save()
+
+    if request.method == 'POST' and request.user.is_authenticated:
+        stars = request.POST.get('stars', 3)
+        content = request.POST.get('content', '')
+
+        review = ProductReview.objects.create(product=product, user=request.user, stars=stars, content=content)
+
+        return render(request, context)
