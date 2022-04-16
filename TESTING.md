@@ -150,6 +150,7 @@ to understand more better about images to improve loading times.
 | Add to bag  | Click Add To Basket adds the product to the basket  | Open Product Detail page click add to basket  | Product available in bag  |  Pass |
 |   | If product has sizes, able to select sizes  | Select large and add to basket  | Item with correct size added to basket  | Pass  |
 |   |  Select the number of quantity | Select 3 as quantity of item  | Item added to basket with the correct quantity  | Pass  |
+| Add review as logged in user  | Able to fill in form and submit review  | Filled in the review form and clicked submit  | The review is added   | Pass  |
 
 **Edit Product Page**
 

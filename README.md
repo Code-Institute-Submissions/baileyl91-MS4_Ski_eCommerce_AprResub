@@ -30,6 +30,7 @@ First Time Visitor Goals
 * A user should be able to create an account easily.
 * The content should be clear and easy to understand.
 * The checkout process should be straightforward and easy to understand.
+* Should be able to see reviews written by other users
 
 Returning User
 
@@ -37,6 +38,8 @@ Returning User
 * Be allowed to view previous orders.
 * Should be able to purchase with previous saved details.
 * Should be able to contact with website with any inquiry they have.
+* Should be able to write a review of a product they may have purchase.
+* Should be able to see reviews written by other users.
 
 Admin User
 
@@ -44,6 +47,8 @@ Admin User
 * Should be able to add a product.
 * Should be able to edit a product.
 * Should be able to delete a product.
+* Should be able to write a review of a product.
+* Should be able to see reviews written by other users.
 
 ## Design
 
