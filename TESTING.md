@@ -150,7 +150,9 @@ to understand more better about images to improve loading times.
 | Add to bag  | Click Add To Basket adds the product to the basket  | Open Product Detail page click add to basket  | Product available in bag  |  Pass |
 |   | If product has sizes, able to select sizes  | Select large and add to basket  | Item with correct size added to basket  | Pass  |
 |   |  Select the number of quantity | Select 3 as quantity of item  | Item added to basket with the correct quantity  | Pass  |
-| Add review as logged in user  | Able to fill in form and submit review  | Filled in the review form and clicked submit  | The review is added   | Pass  |
+| Review | User must be logged in to add review to product details page  | While not logged in navigate to product review section, attempt to leave review  | Message revealed "Please sign in to add a review."  | Pass  |
+| Review | Add a review form adds review to product details page  | While logged in navigate to product review section, fill out form, click add review  | Review visible in reviews section  | Pass  |
+| Review | Reviews for individual products available  | Navigate to product review section  | Reviews visible or message displayed advising "No reviews yet..."  | Pass  |
 
 **Edit Product Page**
 
