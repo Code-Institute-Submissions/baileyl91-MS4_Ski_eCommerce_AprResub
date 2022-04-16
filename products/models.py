@@ -35,10 +35,11 @@ class Product(models.Model):
 
 
 class ProductReview(models.Model):
-    product = models.ForeignKey(Product, related_name='reviews', on_delete=models.CASCADE)
-    user = models.ForeignKey(User, related_name='reviews', on_delete=models.CASCADE)
-
-    content = models.TextField(blank=True, null=True)
+    product = models.ForeignKey(Product, default=None, on_delete=models.CASCADE, related_name="reviews")
+    user_review = models.ForeignKey(User, on_delete=models.PROTECT, null=True, blank=True)
+    content = models.TextField(max_length=1000, blank=True, null=True)
     stars = models.IntegerField()
-
     date_added = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.content

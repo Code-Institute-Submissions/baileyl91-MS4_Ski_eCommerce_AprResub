@@ -3,7 +3,6 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from datetime import datetime
 
 from .models import Product, Category, ProductReview
 from .forms import ProductForm
@@ -64,6 +63,14 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+
+    # Add review
+
+    if request.method == 'POST' and request.user.is_authenticated:
+        stars = request.POST.get('stars', 3)
+        content = request.POST.get('content', '')
+
+        review = ProductReview.objects.create(product=product, user_review=request.user, stars=stars, content=content)
 
     context = {
         'product': product,
@@ -141,18 +148,3 @@ def delete_product(request, product_id):
 
 
 # Reviews views
-@login_required
-def add_review(request, product_id):
-    """ Add a review of a product """
-    product = get_object_or_404(Product, pk=product_id)
-    product.num_visits = product.num_visits + 1
-    product.last_visit = datetime.now()
-    product.save()
-
-    if request.method == 'POST' and request.user.is_authenticated:
-        stars = request.POST.get('stars', 3)
-        content = request.POST.get('content', '')
-
-        review = ProductReview.objects.create(product=product, user=request.user, stars=stars, content=content)
-
-        return render(request, context)
